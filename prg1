@@ -1,0 +1,11 @@
+date1 = (10, 6, 2021)
+date2 = (20, 8, 2021)
+days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+days1 = date1[2] * 365 + date1[1] * 30 + date1[0]
+leap_years1 = (date1[2] - 1) // 4 - (date1[2] - 1) // 100 + (date1[2] - 1) // 400 
+days1 += leap_years1
+days2 = date2[2] * 365 + date2[1] * 30 + date2[0]
+leap_years2 = (date2[2] - 1) // 4 - (date2[2] - 1) // 100 + (date2[2] - 1) // 400
+days2 += leap_years2
+days_difference = abs(days2 - days1)
+print("Number of days between the two dates:", days_difference)
