@@ -1,0 +1,17 @@
+import operator
+
+# List of tuples containing items and their prices
+items_prices = [
+    ("Item1", 10.5),
+    ("Item2", 5.99),
+    ("Item3", 20.75),
+    ("Item4", 8.49),
+    ("Item5", 15.25)
+]
+
+# Sorting the list in descending order by price
+sorted_items = sorted(items_prices, key=operator.itemgetter(1), reverse=True)
+
+# Printing the sorted list
+for item, price in sorted_items:
+    print(f"{item}: Rs.{price}")
