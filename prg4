@@ -1,0 +1,14 @@
+shares_data = [
+    ("Apple", "2023-01-15", 150.0, 10, 200.0),
+    ("Google", "2022-11-20", 250.0, 8, 300.0),
+    ("Microsoft", "2023-03-10", 180.0, 15, 220.0),
+    ("Amazon", "2022-12-05", 300.0, 12, 350.0),
+    ("Facebook", "2023-02-28", 120.0, 20, 150.0)
+]
+total_cost = sum(cost_price * num_shares for _, _, cost_price, num_shares, _ in shares_data)
+total_selling_price = sum(selling_price * num_shares for _, _, _, num_shares, selling_price in shares_data)
+total_gained_or_lost = total_selling_price - total_cost
+percentage_profit_loss = (total_gained_or_lost / total_cost) * 100
+print("Total cost of the portfolio: Rs.", total_cost)
+print("Total amount gained or lost: Rs.", total_gained_or_lost)
+print("Percentage profit made or loss incurred: ", percentage_profit_loss, "%")
