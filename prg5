@@ -1,0 +1,3 @@
+list_of_tuples = [(), ('a', 'b'), (), ('c', 'd'), ('e',), ('',), ('', 'f'), ('g', 'h', '')]
+list_of_tuples = [tup for tup in list_of_tuples if tup]
+print("List after removing empty tuples:", list_of_tuples)
