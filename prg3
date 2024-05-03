@@ -1,0 +1,12 @@
+shares_data = [
+    ("Apple", "2023-01-15", 150.0, 10, 200.0),
+    ("Google", "2022-11-20", 250.0, 8, 300.0),
+    ("Microsoft", "2023-03-10", 180.0, 15, 220.0),
+    ("Amazon", "2022-12-05", 300.0, 12, 350.0),
+    ("Facebook", "2023-02-28", 120.0, 20, 150.0)
+]
+print("Shares held by the user:")
+print("Share Name | Purchase Date | Cost Price | Number of Shares | Selling Price")
+for share_data in shares_data:
+    share_name, purchase_date, cost_price, num_shares, selling_price = share_data
+    print(f"{share_name:10} | {purchase_date:13} | Rs.{cost_price:10.2f} | {num_shares:16} | Rs.{selling_price:13.2f}")
